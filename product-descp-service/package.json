@@ -1,0 +1,14 @@
+{
+  "name": "product_descp_service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Aakash Kamble",
+  "license": "ISC",
+  "dependencies": {
+    "seneca": "^3.2.2"
+  }
+}
