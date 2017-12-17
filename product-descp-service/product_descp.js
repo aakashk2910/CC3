@@ -3,8 +3,8 @@ module.exports = function (options) {
     const mockData = require('./MOCK_DATA.json');
 
     //To DO: Add the patterns and their corresponding functions
-    this.add('role:productDescp,cmd:DisplayURL', getProductName);
-    this.add('role:productDescp,cmd:DisplayName', getProductURL);
+    this.add('role:ProductDescp,cmd:DisplayURL', getProductURL);
+    this.add('role:ProductDescp,cmd:DisplayName', getProductName);
 
     //To DO: add the pattern functions and describe the logic inside the function
 
