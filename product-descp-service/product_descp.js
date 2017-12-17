@@ -3,8 +3,8 @@ module.exports = function (options) {
     const mockData = require('./MOCK_DATA.json');
 
     //To DO: Add the patterns and their corresponding functions
-    this.add('role:productDescp,cmd:DisplayProductDescp', getProductName);
-    this.add('role:productDescp,cmd:DisplayProductDescp', getProductURL);
+    this.add('role:productDescp,cmd:DisplayURL', getProductName);
+    this.add('role:productDescp,cmd:DisplayName', getProductURL);
 
     //To DO: add the pattern functions and describe the logic inside the function
 
@@ -21,7 +21,7 @@ module.exports = function (options) {
         }
     }
 
-    function getProductName(msg, respond){
+    function getProductURL(msg, respond){
         if(msg.productId){
             var res = mockData.find(function(product){
                 if(product.product_id == msg.productId){
